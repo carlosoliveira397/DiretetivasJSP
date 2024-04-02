@@ -12,6 +12,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>JSP Page</h1>
+        <h2>Directives</h2>
+    <div><%= new java.util.Date() %></div>
     </body>
 </html>
