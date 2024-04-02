@@ -16,5 +16,8 @@
         <h1>JSP Page</h1>
         <h2>Directives</h2>
     <div><%= new Date() %></div>
+    <div>
+        <%@include file="WEB-INF/jspf/fragment.jspf" %>
+    </div>
     </body>
 </html>
