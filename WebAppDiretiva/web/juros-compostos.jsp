@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,8 +13,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>JSP Page</h1>
-        <h2>Directives</h2>
+        <div>
+            <%@include file="WEB-INF/jspf/menu.jspf" %>
+        </div>
         <h3>Juros Compostos</h3>
     </body>
 </html>

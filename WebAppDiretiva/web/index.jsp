@@ -6,6 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.Date" %>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,11 +14,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>JSP Page</h1>
-        <h2>Directives</h2>
+        <div>
+            <%@include file="WEB-INF/jspf/menu.jspf" %>
+        </div>
+        <h3>Index</h3>
     <div><%= new Date() %></div>
-    <div>
-        <%@include file="WEB-INF/jspf/fragment.jspf" %>
-    </div>
     </body>
 </html>
