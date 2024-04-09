@@ -40,11 +40,13 @@
             <label>Nº Parcela</label>
             <input type="number" name="parcela" min="1"/><label> Mês</label><br><br>
             <label>Juros</label>
-            <input type="number" name="juros"  min="1"/><br><br>
+            <input type="number" name="juros"/><br><br>
             <input type="submit" name="calc" value="Calcular">
         </form>
         <br><br>
         <% if(errorMessage==null){ %>
+            <div>Meses: <%= parcela %></div>
+            <div>Porcentagem: <%= juros %> %</div>
             <div>Juros: R$ <%= total %></div>
             <div>Valor total: R$ <%= total + valor %></div>
         <% } else { %>
